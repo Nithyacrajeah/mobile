@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'greetings',
     'rest_framework',
-    'calculator'
+    'calculator',
+    'blogapi'
 ]
 
 MIDDLEWARE = [
