@@ -30,7 +30,7 @@ class mulView(APIView):
 
 class facView(APIView):
     def post(self, request, *args, **kwargs):
-        n1 = request.data.get("num1")
+        n1 = int(request.data.get("num1"))
         fact=1
         for i in range(1,n1+1):
             fact=fact*i

@@ -23,6 +23,7 @@ from django.urls import path
 from greetings import views
 from calculator import views as cview
 from blogapi import views as bview
+from mobile.views import mobileviews,mobiledetailsviews
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('goodmorning/',views.GoodmorningView.as_view()),
@@ -32,5 +33,7 @@ urlpatterns = [
     path('operations/mul/',cview.mulView.as_view()),
     path('operations/fact/', cview.facView.as_view()),
     path('social/post/', bview.postView.as_view()),
-    path("social/post/<int:pid>",bview.PostDetailview.as_view())
+    path("social/post/<int:pid>",bview.PostDetailview.as_view()),
+    path("api/v1/mobiles",mobileviews.as_view()),
+    path("api/v1/mobiles/<int:qs>",mobiledetailsviews.as_view())
 ]
