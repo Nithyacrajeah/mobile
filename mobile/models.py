@@ -1,6 +1,6 @@
 mobiles = [
     {"id": 1000, "name": "samsungA52", "band": "4g", "display": "AMOLED", "price": 27000, "brand": "samsung"},
-    {"id": 1001, "name": "samsungA52s", "band": "5g", "display": "AMoLED", "price": 32000, "brand": "samsung"},
+    {"id": 1001, "name": "samsungA52s", "band": "5g", "display": "AMOLED", "price": 32000, "brand": "samsung"},
     {"id": 1002, "name": "redminote10", "band": "4g", "display": "led", "price": 17000, "brand": "redmi"},
     {"id": 1003, "name": "redminote11pro", "band": "5g", "display": "superAMOLED", "price": 20000, "brand": "redmi"},
     {"id": 1004, "name": "samsungA72", "band": "5g", "display": "AMOLED", "price": 27000, "brand": "samsung"},

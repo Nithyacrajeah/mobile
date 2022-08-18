@@ -24,6 +24,7 @@ from greetings import views
 from calculator import views as cview
 from blogapi import views as bview
 from mobile.views import mobileviews,mobiledetailsviews
+from cloth.views import ClothsView,ClothDetailView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('goodmorning/',views.GoodmorningView.as_view()),
@@ -35,5 +36,7 @@ urlpatterns = [
     path('social/post/', bview.postView.as_view()),
     path("social/post/<int:pid>",bview.PostDetailview.as_view()),
     path("api/v1/mobiles",mobileviews.as_view()),
-    path("api/v1/mobiles/<int:qs>",mobiledetailsviews.as_view())
+    path("api/v1/mobiles/<int:qs>",mobiledetailsviews.as_view()),
+    path("api/cloth",ClothsView.as_view()),
+    path("api/cloth/<int:id>",ClothDetailView.as_view())
 ]
